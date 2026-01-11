@@ -44,19 +44,22 @@ I install powerline by using "uv tool" without "pip install --user". The uv also
 $ uv tool install powerline-shell
 ```
 
-6. Move .zshrc
+6. Install nvm and Node.js
+Install [nvm](https://github.com/nvm-sh/nvm) and the latest Node.js.
+```
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+$ nvm install node # "node" is an alias for the latest version
+```
+
+7. Move .zshrc
 ```
 $ cp ./dotfiles/.zshrc ~/
 ```
 
-7. Install Go
-
+8. Install Go
 Download latest stable version golang from [donwload page](https://go.dev/doc/install) and install it.
 
-8. Install Rust
+9. Install Rust
 ```
 $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```
-
-10. nvmとnode.jsをインストール
-[nvm](https://github.com/nvm-sh/nvm)をインストールし、Node.jsのlatest versionをインストールする。

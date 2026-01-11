@@ -114,11 +114,16 @@ if [ "$TERM" != "linux" ]; then
 fi
 
 # ------------------------------
-# For python
+# For uv (Python management)
 # ------------------------------
 export PATH=$HOME/.local/bin:$PATH
 eval "$(uv generate-shell-completion zsh)"
 
+# ------------------------------
+# For nvm (Node.js management
+# ------------------------------
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # zshの起動が遅くなったときにプロファイルを見る用
 #if (which zprof > /dev/null 2>&1) ;then
