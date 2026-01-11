@@ -39,12 +39,14 @@ $ uv python install 3.14 --default --preview-features
 ```
 
 5. Install Powerline
+
 I install powerline by using "uv tool" without "pip install --user". The uv also has pip interface but it doesn't have user option. The pip of uv just installs packages into virtual environments. 
 ```
 $ uv tool install powerline-shell
 ```
 
 6. Install nvm and Node.js
+
 Install [nvm](https://github.com/nvm-sh/nvm) and the latest Node.js.
 ```
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
@@ -57,6 +59,7 @@ $ cp ./dotfiles/.zshrc ~/
 ```
 
 8. Install Go
+
 Download latest stable version golang from [donwload page](https://go.dev/doc/install) and install it.
 
 9. Install Rust
